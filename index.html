@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <title>Recipe App</title>
+  </head>
+  <body>
+
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+      <div class="col-sm"></div>
+
+      <div class="col-sm">
+        <div class="card card-drop-top blueCard grow slideInFromTop">
+          <div class="card-head mx-auto">
+            <img class="card-img-top pt-4 logo" style="width: 85px;" src="images/chef-large.svg" alt="Card image cap">
+          </div>
+          <div class="col-sm">
+
+          <div class="card-body">
+            <h5 class="card-title text-center">Welcome to Pantry!</h5>
+            <p class="card-text mb-4 mt-4">An app designed to help you throw away less food and use what's already in your pantry.</p>
+
+
+            <div id="login" class="text-center">
+              <p class="text-center">Already have an account?</p>
+              <button id="btn-login" class="btn-home mb-2">Login</button>
+              <button id="btn-create-account" class="btn-home">Create Account</button>
+            </div>
+
+            <div id="login-input" class="home-login-input text-center" style="display: none;">
+              <p>Login using your email.</p>
+              <input class="home-input" type="text" name="LastName" placeholder="Email"><br>
+              <input class="home-input mt-2 mb-2" type="text" name="LastName" placeholder="Password">
+              <button id="login-submit" class="btn-home mb-2">Submit</button>
+            </div>
+
+            <div id="create-account-main" class="home-login-input text-center" style="display: none;">
+              <button id="signup-facebook" class="btn-home mb-2">Sign up with Facebook</button>
+              <button id="signup-google" class="btn-home">Sign up with Google</button>
+            </div>
+
+            <p class="text-center pt-4" style="font-size: 10px;">Don't have an account? Sign up</p>
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm"></div>
+  </div>
+</div>
+
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="main.js"></script>
+</html>
