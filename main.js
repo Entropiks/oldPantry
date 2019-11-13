@@ -12,8 +12,8 @@ $("#btn-create-account").click(function() {
 
 // Login - Submit button temporarily takes you back to 'home'
 $("#login-submit").click(function(){
-  $("#login").slideToggle(200);
-  $("#login-input").slideToggle(200);
+  $("#view-dashboard").slideToggle(1);
+  $("#view-login").slideToggle(1);
 });
 
 // Create Account - Sign up with facebook temp taking you back 'home'
