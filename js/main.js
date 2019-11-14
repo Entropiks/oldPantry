@@ -1,3 +1,37 @@
+var app = new Vue({
+  el: '#app',
+  data: {
+    "Recipes": {
+    "Chicken_Paprikash": {
+      "id": 12345,
+      "Nutrition": {
+        "Calories": "1001",
+        "Fats": "35g"
+      },
+      "Ingredient": [
+        "eggs",
+        "apples",
+        "bananas",
+        "chicken",
+        "milk"
+      ]
+    },
+    "Chicken_Casserole": {
+      "id": 12345,
+      "Nutrition": {
+        "Calories": "442",
+        "Fats": "12g"
+      },
+      "Ingredient": [
+        "staples",
+        "cheese",
+        "thats it"
+      ]
+    }
+  }
+  }
+});
+
 // Homepage - Login Button - Toggles login div
 $("#btn-login").click(function(){
   $("#login-input").slideToggle(200);
