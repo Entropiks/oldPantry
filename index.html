@@ -57,7 +57,7 @@
     </div>
   </div>
 
-  <div id="view-dashboard" class="card container h-100 m-0 p-0 card-drop-left" style="display: none;">
+  <div id="view-dashboard" class="dashboard-container h-100 m-0 p-0 card-drop-left" style="display: none;">
     <div class="row m-0 p-0">
       <div class="cover-container">
         <header class="masthead">
@@ -88,33 +88,22 @@
 
         <main id="view-dashboard-content" class="inner cover">
           <div class="container h-100">
-
           </div>
         </main>
-
       </div>
     </div>
     <div class="row m-0 p-0 fixed-bottom">
-      <div class="mastfoot">
+      <div class="mastfoot w-100">
         <div class="container h-100 sticky-bottom">
+          <h4>Other Recipes</h4>
           <div class="row related-recipes">
-            <div class="col-sm gradient-pink">
-              <h5>Chicken Paprikash</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dol</p>
-            </div>
-            <div class="col-sm gradient-pink">
-              <h5>Chicken Paprikash</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dol</p>
-            </div>
-            <div class="col-sm gradient-pink">
-              <h5>Chicken Paprikash</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dol</p>
-            </div>
+            <div v-for="recipes in recipes.slice(0, 4)" class="col-sm">{{ recipes.recipe_name }}</div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </div>
 
   </body>

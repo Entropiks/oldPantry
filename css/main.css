@@ -12,9 +12,7 @@ body {
 button:focus, input:focus {
   outline: none !important; /* forcing chrome blue highlight box off */
 }
-#view-dashboard {
-  background: #fff
-}
+
 .container {
   max-width: 100% !important;
 }
@@ -23,11 +21,6 @@ button:focus, input:focus {
   background: #FFAFBD;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.related-recipes .col-sm {
-  padding: 15px;
-  margin: 10px;
 }
 
 .btn-home, .home-input {
@@ -75,6 +68,7 @@ button:focus, input:focus {
 }
 
 .card {
+  background-color: rgba(0,0,0,0);
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, .1);
 }
 
@@ -83,7 +77,10 @@ button:focus, input:focus {
 }
 .card-drop-top {
   animation: .5s ease-in-out 0s 1 slideInFromTop;
+}
 
+.dashboard-container {
+  background-color: white;
 }
 
 .card-drop-left {

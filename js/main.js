@@ -1,34 +1,44 @@
 var app = new Vue({
   el: '#app',
   data: {
-    "Recipes": {
-    "Chicken_Paprikash": {
-      "id": 12345,
-      "Nutrition": {
-        "Calories": "1001",
-        "Fats": "35g"
+    recipes: [
+      {
+        recipeId: 1111,
+        recipe_name: 'chicken',
+        calories: '1000',
+        fats: '14g'
       },
-      "Ingredient": [
-        "eggs",
-        "apples",
-        "bananas",
-        "chicken",
-        "milk"
-      ]
-    },
-    "Chicken_Casserole": {
-      "id": 12345,
-      "Nutrition": {
-        "Calories": "442",
-        "Fats": "12g"
+      {
+        recipeId: 1112,
+        recipe_name: 'steak',
+        calories: '10010',
+        fats: '14g'
       },
-      "Ingredient": [
-        "staples",
-        "cheese",
-        "thats it"
-      ]
-    }
-  }
+      {
+        recipeId: 1112,
+        recipe_name: 'fish',
+        calories: '10010',
+        fats: '14g'
+      },
+      {
+        recipeId: 1112,
+        recipe_name: 'ice cream',
+        calories: '10010',
+        fats: '14g'
+      },
+      {
+        recipeId: 1112,
+        recipe_name: 'a shovel',
+        calories: '10010',
+        fats: '14g'
+      },
+      {
+        recipeId: 1112,
+        recipe_name: 'sea urchins',
+        calories: '10010',
+        fats: '14g'
+      }
+    ]
   }
 });
 
