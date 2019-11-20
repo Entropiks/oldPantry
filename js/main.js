@@ -4,41 +4,42 @@ var app = new Vue({
     recipes: [
       {
         recipeId: 1111,
-        recipe_name: 'chicken',
+        recipe_name: 'Chicken Paprikash',
         calories: '1000',
         fats: '14g'
       },
       {
         recipeId: 1112,
-        recipe_name: 'steak',
+        recipe_name: 'Steak',
         calories: '10010',
         fats: '14g'
       },
       {
         recipeId: 1112,
-        recipe_name: 'fish',
+        recipe_name: 'Herbed Lemon Salmon',
         calories: '10010',
         fats: '14g'
       },
       {
         recipeId: 1112,
-        recipe_name: 'ice cream',
+        recipe_name: 'Brownies',
         calories: '10010',
         fats: '14g'
       },
       {
         recipeId: 1112,
-        recipe_name: 'a shovel',
+        recipe_name: 'Meatballs',
         calories: '10010',
         fats: '14g'
       },
       {
         recipeId: 1112,
-        recipe_name: 'sea urchins',
+        recipe_name: 'Mexican Chip Dip',
         calories: '10010',
         fats: '14g'
       }
-    ]
+    ],
+    userIngredients: ["eggs", "potatoes", "milk", "pasta", "rice", "beans"]
   }
 });
 

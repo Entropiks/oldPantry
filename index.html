@@ -52,58 +52,98 @@
             </div>
           </div>
         </div>
-
-
     </div>
   </div>
 
-  <div id="view-dashboard" class="dashboard-container h-100 m-0 p-0 card-drop-left" style="display: none;">
-    <div class="row m-0 p-0">
-      <div class="cover-container">
-        <header class="masthead">
-          <nav class="navbar navbar-expand-md fixed-top">
-            <a class="navbar-brand" href="#">Pantry</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">My Ingredients</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Browse Recipes</a>
-                </li>
-              </ul>
-              <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-        </header>
+  <div id="view-dashboard" class="dashboard-container h-100 card-drop-left" style="display: none;">
+    <div class="cover-container d-flex h-100 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
 
-        <main id="view-dashboard-content" class="inner cover">
-          <div class="container h-100">
+          <nav class="nav nav-masthead shadow-sm">
+            <h3 class="masthead-brand">PANTRY</h3>
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h4>My Ingredients</h4>
+              <ul>
+                <li v-for="ingredients in userIngredients" class="col-sm">{{ ingredients }}</li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              One of three columns
+            </div>
+            <div class="col-sm">
+              Saved Recipes
+            </div>
           </div>
-        </main>
-      </div>
-    </div>
-    <div class="row m-0 p-0 fixed-bottom">
-      <div class="mastfoot w-100">
-        <div class="container h-100 sticky-bottom">
-          <h4>Other Recipes</h4>
+        </div>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <h4>Recommended Recipes</h4>
+        <div class="container">
           <div class="row related-recipes">
             <div v-for="recipes in recipes.slice(0, 4)" class="col-sm">{{ recipes.recipe_name }}</div>
+          </div>
+        </div>
+      </footer>
+    <!--
+    <div class="container h-100">
+      <div class="row m-0 p-0">
+        <div class="cover-container">
+          <header class="masthead">
+            <nav class="navbar navbar-expand-md fixed-top">
+              <a class="navbar-brand" href="#">Pantry</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Ingredients</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Browse Recipes</a>
+                  </li>
+                </ul>
+                <form class="form-inline mt-2 mt-md-0">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                  <button class="btn my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+            </nav>
+          </header>
+        </div>
+      </div>
+      <div class="row m-0 p-0">
+        <h4>My Ingredients</h4>
+      </div>
+
+      <div class="row m-0 p-0 fixed-bottom">
+        <div class="mastfoot w-100">
+          <div class="container h-100 sticky-bottom">
+            <h4>Other Recipes</h4>
+            <div class="row related-recipes">
+              <div v-for="recipes in recipes.slice(0, 4)" class="col-sm">{{ recipes.recipe_name }}</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
+  -->
 </div>
 
   </body>
