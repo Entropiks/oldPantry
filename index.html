@@ -74,12 +74,13 @@
           <div class="row">
             <div class="col-sm">
               <h4>My Ingredients</h4>
-              <ul>
-                <li v-for="ingredients in userIngredients" class="col-sm">{{ ingredients }}</li>
+              <input class="form-control" id="ingredient-search" type="text" placeholder="Search..">
+              <ul class="list-group" id="user-ingredient-list">
+                <li v-for="ingredients in userIngredients" class="col-sm ">{{ ingredients }}</li>
               </ul>
             </div>
             <div class="col-sm">
-              One of three columns
+
             </div>
             <div class="col-sm">
               Saved Recipes

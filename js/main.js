@@ -43,6 +43,16 @@ var app = new Vue({
   }
 });
 
+//
+$(document).ready(function(){
+  $("#ingredient-search").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#user-ingredient-list li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
 // Homepage - Login Button - Toggles login div
 $("#btn-login").click(function(){
   $("#login-input").slideToggle(200);
